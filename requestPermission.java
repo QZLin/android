@@ -1,4 +1,4 @@
-//don't forgot in xml
+//don't forgot with xml
 public void requestAllPower() {
         if (ContextCompat.checkSelfPermission(this,Manifest.permission.WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED)
         {

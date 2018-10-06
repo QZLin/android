@@ -1,13 +1,15 @@
 //handler 实例
-public void onclickView view) {
+public void onclick（View view) {
         handler.post(thread);
     }
-
+	
     @SuppressLint("HandlerLeak")
     Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             // 获取Message里面的复杂数据
+	    Bundle bundle = msg.getData();
+	    String string = bundle.getString("key");
             // 主线程，可以直接对页面进行修改
             handler.post(thread);
         }
